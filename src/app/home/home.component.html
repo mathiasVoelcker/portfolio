@@ -1,0 +1,207 @@
+<portfolio-header></portfolio-header>
+<div class="service-section" id="service">
+    <div class="container">
+        <div class="service-grids">
+            <div class="col-md-4 service-grid">
+                <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+                <h4>Software Engineer</h4>
+                <span> </span>
+                <p>Graduated in <b>Software Engineering</b> at <a href="https://www.pucrs.br/en/"><b>PUCRS</b></a>. 
+                    3 years of professional experience at <a href="https://cwi.com.br/">CWI</a>.</p>
+            </div>
+            <div class="col-md-4 service-grid">
+                <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <h4>Computer Science at USC</h4>
+                <span> </span>
+                <p>Currently taking the Master of Computer Science at <a href="http://usc.edu/"><b>USC</b></a> with a current GPA of <b>3.82</b>. Guraduating in May 2022</p>                
+            </div>
+            <div class="col-md-4 service-grid">
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                <h4>Software Developer at ICT</h4>
+                <span> </span>
+                <p>Working since February 2021 at <a href="https://ict.usc.edu/">USC Institute for Creative Technologies</a>,
+                    developing from scratch a web application in <b>.NET</b> and <b>Angular</b></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<div class="study-section">
+    <div class="container">
+        <div class="study-grids study-grid">
+            <h3 class="col-padding">Projects</h3>
+            <p class="col-padding m-description">I worked in dozens of software applications throughout the years, from class assignments, to complex APIs for customer's website, to personal projects.
+                Although most of these are not public for anyone to see, here are some highlights:
+            </p>
+            <div class="col-md-5 study-grid">
+                <h3><span>Web</span></h3>
+                <div class="study1">
+                    <div class="m-block">
+                        <div><h4><a href="https://ict.usc.edu/prototypes/elite_sharp_ctt/">Elite</a><div style="float: right; font-size: 16px;">February 2021 - present</div></h4> </div>
+                        <p>Project at USC ICT.
+                            Transforming a <span>.NET + Unity</span> desktop application into a <span>.NET 5 + Angular</span> web application.
+                            Fully responsible for the back-end development and publishing into <span>Azure</span>.
+                        </p>
+                    </div>
+                    <div class="m-block">
+                        <h4><a href="http://pokemon-calculator.azurewebsites.net/">PokeCalculator</a></h4>
+                        <p>A website to create and test pokemons in battle. 
+                            Developed in <span>.NET core </span> and <span>Angular</span>, with <span>SQL Server</span> Database and hosted on <span>Azure</span>.
+                        </p>
+                    </div>
+                    <div class="m-block">
+                        <h4><a href="https://github.com/mathiasVoelcker/Extensions.MV">Extensions.MV</a></h4>
+                        <p>Nuget package for .NET applications with over 5k downloads including inumerous extensions, including a .BR version for Brazilian Portuguese.
+                            Source code can be found <a href="https://github.com/mathiasVoelcker/Extensions.MV">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 study-grid">
+                <h3><span>Others</span></h3>
+                <div class="study1">
+                    <div class="m-block">
+                        <div><h4><a>Ray tracing</a><div style="float: right; font-size: 16px;">April 2021</div></h4> </div>
+                        <p>Computer graphics class assignment. Development of ray tracer in <span>C++</span> with Phong shading, soft shadows, recursive reflections and antialiasing.</p>
+                        <a *ngIf="!isRTOpen" class="clickable" (click)="openRT()">+</a>
+                        <a *ngIf="isRTOpen" class="clickable" (click)="closeRT()">-</a>
+                        <div *ngIf="isRTOpen">
+                            <img style="width: 100%" src="assets/images/spheres_reflect.jpeg">
+                            <img style="width: 100%" src="assets/images/snowman.jpeg">
+                        </div>
+                    </div>
+                    <div class="m-block">
+                        <div><h4><a href="https://mysticalvr.weebly.com/">Mystical</a><div style="float: right; font-size: 16px;">September 2020 - January 2021</div></h4> </div>
+                        <p><span>VR Experience</span> about the ancient Andean symbol "La Chakana". I was part of engineering team as <span>C# Unity</span> developer.</p>
+                    </div>
+                    <div class="m-block">
+                        <div><h4><a href="https://mvoelcker.itch.io/crazy-tetris">Crazy Tetris</a><div style="float: right; font-size: 16px;"></div></h4> </div>
+                        <p>Personal game project, a Tetris variation, made with <span>Unity</span> with <span>C#</span>.</p>
+                        <iframe frameborder="0" src="https://itch.io/embed/749455" width="552" height="167"><a href="https://mvoelcker.itch.io/crazy-tetris">Crazy Tetris by mvoelcker</a></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-md-12" style="text-align: center;">
+                <h4><a href="https://github.com/mathiasVoelcker">Much more...</a></h4> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="study-section">
+    <div class="container">
+        <div class="study-grids study-grid">
+            <h3 class="col-padding">Professional Experience</h3>
+            <div class="col-md-5 study-grid">
+                <h3><a href="https://ict.usc.edu/"><span>USC Institute for Creative Technologies</span></a></h3>
+                <h4 >February 2021 - present</h4>
+                <div class="study1">
+                    <div class="m-block">
+                        <ul>
+                            <li>Created web version of existing desktop application for training leadership skills;</li>
+                            <li>Developed from scratch back-end in .NET 5 and SQL database;</li>
+                            <li>Implemented new functionalities to .NET + Unity application;</li>
+                            <li>Published web application to Azure app service.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-5 study-grid">
+                <h3><a href="https://cwi.com.br/">CWI</a></h3>
+                <h4 >September 2017 - September 2020</h4>
+                <div class="study1">
+                    <div class="m-block">
+                        <ul>
+                            <li>Developed applications and maintained existing ones at customer's website, with .NET Framework and .NET Core for APIs and services and Angular for web pages;</li>
+                            <li>Communicated daily with customer's software analysts, conducting analysis of requests of new features and applications;</li>
+                            <li>Implemented unit and integration tests for .NET applications;</li>
+                            <li>Published programming tasks directly into customer's server.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="study-section">
+    <div class="container">
+        <div class="study-grids study-grid">
+            <h3>skills..<span>!</span></h3>
+            <div class="skills-list">
+                <div class="col-md-6 ">
+                    <div class="study2">
+                        <ul>
+                            <li><a (click)="openSkill(0)" class="clickable">C# .NET and .NET Core</a></li>
+                            <div *ngIf="skill0">
+                                <label>Consists of most of my professional experience. 
+                                        With these skiils I worked on APIs, MVC web applications, Desktop applications and windows server</label>
+                            </div>
+                            <li><a (click)="openSkill(1)" class="clickable">Angular</a></li>
+                                <div *ngIf="skill1">
+                                    <label>
+                                        Apart from experience implementing web pages in multiple projects, 
+                                        I lead a group of students for a big class project helping everyone on learning Angular.
+                                    </label>
+                                </div>
+                            <li><a (click)="openSkill(2)" class="clickable">SQL</a></li>
+                            <li><a (click)="openSkill(3)" class="clickable">Unity</a></li>
+                            <li><a (click)="openSkill(4)" class="clickable">C++</a></li>
+                            <div *ngIf="skill4">
+                                <label>3d renderer made with C++, including texture mapping (left), procedural textue(right), antialiasing and Phong shading</label>
+                                <img style="width: 100%" src="assets/images/cpp_render.png">
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 study-grid">
+                    <div class="study2">
+                        <ul>
+                            <li><a (click)="openSkill(5)" class="clickable">Open GL</a></li>
+                            <div *ngIf="skill5">
+                                <label>Roller coaster ride using C++ and OpenGL:</label>
+                                <video width="320" height="240" controls>
+                                    <source src="assets/videos/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <li><a (click)="openSkill(6)" class="clickable">Node.js</a></li>
+                            <div *ngIf="skill6">
+                                <label>Worked on a couple of class assignments with Node.js, 
+                                    including the <a href="https://tools.ages.pucrs.br/easyclass">Easy Class</a> project, a website for connecting highschool students with instructores.
+                                I implemented and maineined features on a Node.js API.</label>
+                            </div>
+                            <li><a (click)="openSkill(7)" class="clickable">Java</a></li>
+                            <li><a (click)="openSkill(8)" class="clickable">HTML</a></li>
+                            <li><a (click)="openSkill(9)" class="clickable">Agile Methodology</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-section">
+    <div class="container">
+        <div class="footer-top">
+    <p>&copy; 2015 <span>Hello.</span> All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+                </div>
+        <script type="text/javascript">
+    $(document).ready(function() {
+        /*
+        var defaults = {
+              containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear' 
+         };
+        */
+        
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
+</div>

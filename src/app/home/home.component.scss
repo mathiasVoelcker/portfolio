@@ -1,0 +1,23 @@
+.m-block {
+    border-bottom: 1px solid #9CA69D;
+    padding-bottom: 3em;
+    padding-top: 1em;
+}
+
+.m-description {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+li::before {
+    content: "•"; 
+    color: #9D5C0D;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.skills-list {
+    font-size: 18px;
+}
