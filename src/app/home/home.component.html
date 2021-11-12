@@ -64,8 +64,8 @@
                     <div class="m-block">
                         <div><h4><a>Ray tracing</a><div style="float: right; font-size: 16px;">April 2021</div></h4> </div>
                         <p>Computer graphics class assignment. Development of ray tracer in <span>C++</span> with Phong shading, soft shadows, recursive reflections and antialiasing.</p>
-                        <a *ngIf="!isRTOpen" class="clickable" (click)="openRT()">+</a>
-                        <a *ngIf="isRTOpen" class="clickable" (click)="closeRT()">-</a>
+                        <a *ngIf="!isRTOpen" class="clickable" (click)="openRT()" style="font-size: 18px;">+</a>
+                        <a *ngIf="isRTOpen" class="clickable" (click)="closeRT()" style="font-size: 18px;">-</a>
                         <div *ngIf="isRTOpen">
                             <img style="width: 100%" src="assets/images/spheres_reflect.jpeg">
                             <img style="width: 100%" src="assets/images/snowman.jpeg">
