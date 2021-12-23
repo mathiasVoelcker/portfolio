@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   isRTOpen: boolean = false;
+  isTSPSOpen: boolean = false;
   skill0: boolean = false;
   skill1: boolean = false;
   skill2: boolean = false;
@@ -24,12 +25,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openRT() {
-    this.isRTOpen = true;
+  openCloseRT() {
+    this.isRTOpen = !this.isRTOpen;
   }
-  
-  closeRT() {
-    this.isRTOpen = false;
+
+  openCloseTSPS()
+  {
+    this.isTSPSOpen = !this.isTSPSOpen;
   }
 
   openSkill(skillIndex: number)

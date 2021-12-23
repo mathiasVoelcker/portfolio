@@ -13,7 +13,7 @@
                 <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                 <h4>Computer Science at USC</h4>
                 <span> </span>
-                <p>Currently taking the Master of Computer Science at <a href="http://usc.edu/"><b>USC</b></a> with a current GPA of <b>3.82</b>. Guraduating in May 2022</p>                
+                <p>Currently taking the Master of Computer Science at <a href="http://usc.edu/"><b>USC</b></a> with a current GPA of <b>3.86</b>. Guraduating in May 2022</p>                
             </div>
             <div class="col-md-4 service-grid">
                 <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
@@ -62,10 +62,26 @@
                 <h3><span>Graphics & Games</span></h3>
                 <div class="study1">
                     <div class="m-block">
-                        <div><h4><a>Ray tracing</a><div style="float: right; font-size: 16px;">April 2021</div></h4> </div>
+                        <div><h4><a>Toon Shader and Particle System</a><div style="float: right; font-size: 16px;">November 2021</div></h4> </div>
+                        <p>Final project of Game Engine Development class. Implemented on an existing C++ engine a Toon Shader, with ramp shading and outlines, and a particle system that simulates fire</p>
+                        <a *ngIf="!isTSPSOpen" class="clickable" (click)="openCloseTSPS()" style="font-size: 18px;">See more</a>
+                        <a *ngIf="isTSPSOpen" class="clickable" (click)="openCloseTSPS()" style="font-size: 18px;">X</a>
+                        <div *ngIf="isTSPSOpen">
+                            <p>lighting demo:</p>
+                            <video width="400" height="300" controls>
+                                <source src="assets/videos/lighting_demo.mp4" type="video/mp4">
+                            </video>
+                            <p>particles demo:</p>
+                            <video width="400" height="300" controls>
+                                <source src="assets/videos/fire_demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="m-block">
+                        <div><h4><a>Ray Tracing</a><div style="float: right; font-size: 16px;">April 2021</div></h4> </div>
                         <p>Computer graphics class assignment. Development of ray tracer in <span>C++</span> with Phong shading, soft shadows, recursive reflections and antialiasing.</p>
-                        <a *ngIf="!isRTOpen" class="clickable" (click)="openRT()" style="font-size: 18px;">+</a>
-                        <a *ngIf="isRTOpen" class="clickable" (click)="closeRT()" style="font-size: 18px;">-</a>
+                        <a *ngIf="!isRTOpen" class="clickable" (click)="openCloseRT()" style="font-size: 18px;">See more</a>
+                        <a *ngIf="isRTOpen" class="clickable" (click)="openCloseRT()" style="font-size: 18px;">X</a>
                         <div *ngIf="isRTOpen">
                             <img style="width: 100%" src="assets/images/spheres_reflect.jpeg">
                             <img style="width: 100%" src="assets/images/snowman.jpeg">
@@ -129,14 +145,14 @@
 <div class="study-section">
     <div class="container">
         <div class="study-grids study-grid">
-            <h3>skills..<span>!</span></h3>
+            <h3>skills<span>!</span></h3>
             <div class="skills-list">
                 <div class="col-md-6 ">
                     <div class="study2">
                         <ul>
                             <li><a (click)="openSkill(0)" class="clickable">C# .NET and .NET Core</a></li>
                             <div *ngIf="skill0">
-                                <label>Consists of most of my professional experience. 
+                                <label>Most of my professional experience. 
                                         With these skiils I worked on APIs, MVC web applications, Desktop applications and windows server</label>
                             </div>
                             <li><a (click)="openSkill(1)" class="clickable">Angular</a></li>
@@ -146,13 +162,13 @@
                                         I lead a group of students for a big class project helping everyone on learning Angular.
                                     </label>
                                 </div>
-                            <li><a (click)="openSkill(2)" class="clickable">SQL</a></li>
-                            <li><a (click)="openSkill(3)" class="clickable">Unity</a></li>
-                            <li><a (click)="openSkill(4)" class="clickable">C++</a></li>
-                            <div *ngIf="skill4">
+                            <li><a (click)="openSkill(2)" class="clickable">C++</a></li>
+                            <div *ngIf="skill2">
                                 <label>3d renderer made with C++, including texture mapping (left), procedural textue(right), antialiasing and Phong shading</label>
                                 <img style="width: 100%" src="assets/images/cpp_render.png">
                             </div>
+                            <li><a (click)="openSkill(3)" class="clickable">SQL</a></li>
+                            <li><a (click)="openSkill(4)" class="clickable">Unity</a></li>
                         </ul>
                     </div>
                 </div>
