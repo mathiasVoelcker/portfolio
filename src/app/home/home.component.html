@@ -37,10 +37,18 @@
                 <h3><span>Web</span></h3>
                 <div class="study1">
                     <div class="m-block">
-                        <div><h4><a href="https://ict.usc.edu/prototypes/elite_sharp_ctt/">Elite</a><div style="float: right; font-size: 16px;">February 2021 - present</div></h4> </div>
+                        <div><h4><a href="https://ict.usc.edu/prototypes/elite_sharp_ctt/">Elite</a><div class="date-label">Feb 2021 - present</div></h4> </div>
                         <p>Project at USC ICT.
                             Transforming a <span>.NET + Unity</span> desktop application into a <span>.NET 5 + Angular</span> web application.
                             Fully responsible for the back-end development and publishing into <span>Azure</span>.
+                        </p>
+                    </div>
+                    <div class="m-block">
+                        <div><h4><a>Doctor's Financial Statement</a><div class="date-label">Jun 2019 - Dec 2019</div></h4></div>
+                        <p>
+                            Project to create a web financial statements to doctors affiliated with Unimed 
+                            (a Brazilian health insurance company), received with great satisfaction from users (doctors).
+                            I was lead programmer and responsible for <span>software architecture</span> in .NET and had weekly meetings with stakeholders to define project's scope.
                         </p>
                     </div>
                     <div class="m-block">
@@ -62,7 +70,7 @@
                 <h3><span>Graphics & Games</span></h3>
                 <div class="study1">
                     <div class="m-block">
-                        <div><h4><a>Toon Shader and Particle System</a><div style="float: right; font-size: 16px;">November 2021</div></h4> </div>
+                        <div><h4><a class="clickable" (click)="openCloseTSPS()">Toon Shader and Particle System</a><div class="date-label">Nov 2021</div></h4> </div>
                         <p>Final project of Game Engine Development class. Implemented on an existing C++ engine a Toon Shader, with ramp shading and outlines, and a particle system that simulates fire</p>
                         <a *ngIf="!isTSPSOpen" class="clickable" (click)="openCloseTSPS()" style="font-size: 18px;">See more</a>
                         <a *ngIf="isTSPSOpen" class="clickable" (click)="openCloseTSPS()" style="font-size: 18px;">X</a>
@@ -78,7 +86,7 @@
                         </div>
                     </div>
                     <div class="m-block">
-                        <div><h4><a>Ray Tracing</a><div style="float: right; font-size: 16px;">April 2021</div></h4> </div>
+                        <div><h4><a class="clickable" (click)="openCloseRT()">Ray Tracing</a><div class="date-label">April 2021</div></h4> </div>
                         <p>Computer graphics class assignment. Development of ray tracer in <span>C++</span> with Phong shading, soft shadows, recursive reflections and antialiasing.</p>
                         <a *ngIf="!isRTOpen" class="clickable" (click)="openCloseRT()" style="font-size: 18px;">See more</a>
                         <a *ngIf="isRTOpen" class="clickable" (click)="openCloseRT()" style="font-size: 18px;">X</a>
@@ -88,11 +96,12 @@
                         </div>
                     </div>
                     <div class="m-block">
-                        <div><h4><a href="https://mysticalvr.weebly.com/">Mystical</a><div style="float: right; font-size: 16px;">September 2020 - January 2021</div></h4> </div>
+                        <div><h4><a href="https://mysticalvr.weebly.com/">Mystical</a><div class="date-label">Sep 2020 - Jan 2021</div></h4> </div>
                         <p><span>VR Experience</span> about the ancient Andean symbol "La Chakana". I was part of engineering team as <span>C# Unity</span> developer.</p>
+                        <a href="https://mysticalvr.weebly.com/" clas="clickable" style="font-size: 18px;">See more</a>
                     </div>
                     <div class="m-block">
-                        <div><h4><a href="https://mvoelcker.itch.io/crazy-tetris">Crazy Tetris</a><div style="float: right; font-size: 16px;"></div></h4> </div>
+                        <div><h4><a href="https://mvoelcker.itch.io/crazy-tetris">Crazy Tetris</a><div class="date-label"></div></h4> </div>
                         <p>Personal game project, a Tetris variation, made with <span>Unity</span> with <span>C#</span>.</p>
                         <iframe frameborder="0" src="https://itch.io/embed/749455" width="552" height="167"><a href="https://mvoelcker.itch.io/crazy-tetris">Crazy Tetris by mvoelcker</a></iframe>
                     </div>
